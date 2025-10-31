@@ -1,3 +1,11 @@
+/* General layout sections */
+.section {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Slider container */
 #slider {
   position: fixed;
   bottom: 0;
@@ -7,5 +15,30 @@
   width: 80vw;
   height: 40px;
 
-  border: 1px;
+  border: 1px solid; /* gives a visible border with default color */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+/* Slider buttons */
+#slider_past,
+#slider_next {
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: 1px solid;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Slider bar (center section) */
+#slider_bar {
+  flex: 1;
+  height: 6px;
+  border: 1px solid;
+  margin: 0 10px;
+  box-sizing: border-box;
 }
